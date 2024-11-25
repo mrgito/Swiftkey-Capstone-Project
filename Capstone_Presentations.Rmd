@@ -1,0 +1,76 @@
+---
+title: "COURSERA - JHU Swiftkey Capstone Project"
+author: "Gito"
+date: "2024-11-25"
+output: slidy_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Executive Summary
+
+This Project is part of Coursera - John Hopkins Data Science Specialization Course on Swiftkey Capstone Project.
+
+This Project is about predicting/suggesting next text/word based on the given text/sentences, like popular phone Swiftkey Smart Keyboard.
+
+The N-Gram result was already summarized from Task02 Project based on collections of 3 training datasets, en_US.blogs.txt,en_US.twitter.txt and en_US.news.txt which then pre-processed to be N-Gram tables.
+
+**Algorithm Steps :**
+
+1.  Data Collections from News,Blogs and Twitter and Data Cleaning
+
+2.  NLP Analysis to produce n-Gram, in this project we will use mono,bi and tri-Gram to predict up to 2 word predictors
+
+3.  Generate 5 highest frequency n-gram
+
+4.  Filter up to 2 words input to predict 2nd/3rd words based on 5 highest likelihood
+
+5.  System View
+
+## Data Collections and Data Cleaning
+
+Below are the steps of Data Collections and Data Cleaning
+
+-   Import Data From the given sources,ie Twitter, blogs and news
+
+-   Data Cleaning and transform to word corpus, which consists of remove unnecessary characters, remove punctuation, remove numbers, transform to lowercase and text stemming
+
+-   Below are sample output of Top 20 Monogram, Bigram and Trigram respectively
+
+-   This results will be used to predict/recommend next words based on 2 last word predictors
+
+```{r image, out.width = "30%"}
+library(knitr)
+include_graphics(c("monogram.png","bigram.png","trigram.png"))
+```
+
+## Filtering, Predictions Result and Limitations
+
+Predictions will be made based on the mono,bi and tri-gram tables from the given input predictors
+
+Below are project limitations and limitations could be further enhanced as per required.
+
+-   Training data was limited to 7500 rows to avoid memory overload issues
+
+-   Predictors are limited to max last 2 words
+
+-   Output predictions will be limited to 5 predictions based on highest likelihood
+
+## System View
+
+Below are graphical interface on shiny apps
+
+-   System will consider last 2 words as predictors
+
+-   Predictions will be shown on the left panes
+
+-   Right most predictions is the highest likelihood
+
+-   Left most predictions is the least likelihood
+
+```{r out.width = "70%"}
+library(knitr)
+include_graphics(c("gui.png"))
+```

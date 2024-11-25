@@ -1,0 +1,40 @@
+---
+title: "Text Recommender System - About"
+author: "Gito"
+date: "2024-11-25"
+output: html_document
+---
+
+# **About**
+
+This Project is part of Coursera - John Hopkins Data Science Specialization Course on Swiftkey Capstone Project.
+
+This Project is about predicting/suggesting next text/word based on the given text/sentences, like popular phone Swiftkey Smart Keyboard.
+
+The N-Gram result was already summarized from Task02 Project based on collections of 3 training datasets, en_US.blogs.txt,en_US.twitter.txt and en_US.news.txt which then pre-processed to be N-Gram tables.
+
+**Below are the limitation on this project :**
+
+-   Limited to 2500 Lines x 3 Sources in order to avoid insufficient of Memory
+
+-   We will use Mono, Bi , Tri-Gram with 1-2 word predictor and It will suggest up to 5 suggestion/prediction.
+
+**Below are the step by step :**
+
+-   Please fill the input based your desired words/sentences
+
+-   System will recommend/predict/suggest up to 5 next words, this can be seen on the left pane
+
+-   If no suggestion available then it will show blank like below
+
+    ```         
+    [1] ,
+    ```
+
+-   If suggestions are available then left most word is the highest likelihood and right most word is the least likelihood
+
+**Below are the link toward documentations :**
+
+1.  Github
+2.  Rpub, <https://rpubs.com/Masculin/SwiftkeyCapstone>
+3.  Shiny, [https://masculin.shinyapps.io/SwiftkeyCapstone/](https://masculin.shinyapps.io/ShinyApp_Reproducible_Project/){.uri}
