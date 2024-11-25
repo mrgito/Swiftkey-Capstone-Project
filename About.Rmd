@@ -35,6 +35,6 @@ The N-Gram result was already summarized from Task02 Project based on collection
 
 **Below are the link toward documentations :**
 
-1.  Github
+1.  Github, https://github.com/mrgito/Swiftkey-Capstone-Project
 2.  Rpub, <https://rpubs.com/Masculin/SwiftkeyCapstone>
 3.  Shiny, [https://masculin.shinyapps.io/SwiftkeyCapstone/](https://masculin.shinyapps.io/ShinyApp_Reproducible_Project/){.uri}
